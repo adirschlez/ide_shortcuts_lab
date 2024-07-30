@@ -25,13 +25,14 @@ def run():
 
     # We will define a new POSTFIX COMPLETION for this action
     # GO TO SETTINGS -> POSTFIX COMPLETION and define time postfix action
-    # insert the next struct:
-    #
-    # start = time.time()
-    # $EXPR$
-    # end = time.time()
-    # print(f"Function $EXPR$ Execution time: {end - start}")
+    # click ADD (`+` button), choose Python & define the following:
+    # 1) in the Key parameter, insert "check_time"
+    # 2) check the "Apply to the topmost expression" checkbox
+    # 3) in the Template parameter, insert the following:
+    #       start = time.time()
+    #       $EXPR$
+    #       end = time.time()
+    #       print(f"Function $EXPR$ Execution time: {end - start}")
 
-
-
-
+    # finally:
+    #   go to the end of 24th line, add a dot (`.`) and choose "check_time" in the autocomplete list
